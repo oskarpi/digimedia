@@ -1,7 +1,7 @@
 git init
 -vain ekalla kerralla
 git add .
-git commit -m jotain (mitä muutettu ja miksi muutettu)
+git commit -m "jotain" (mitä muutettu ja miksi muutettu)
 git remote add origin https://osoite......(https://github.com/oskarpi/digimedia.git)
 - vain ekalla kerralla
 git push -u origin master
