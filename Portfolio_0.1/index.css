@@ -1,0 +1,20 @@
+#jumbo{
+    margin-bottom: 0rem;
+}
+.card{
+    margin-bottom: 2rem;
+}
+.col-md-12{
+    margin-bottom: 2rem;
+    border: 2rem;
+}
+#collapseExample{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#collapsecontainer{
+    width: 29rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+}

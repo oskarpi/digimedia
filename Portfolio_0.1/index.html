@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 <header>
     <nav class="navbar navbar-dark bg-dark shadow-sm" id="top">
         <div class="container d-flex justify-content-between">
-            <a class="navbar-brand"  id="navlogo"><i class="ion-compose"></i> Example</a>
+            <a class="navbar-brand" id="navlogo"><i class="ion-compose"></i> Example</a>
             <div class="btn-group">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown"
@@ -20,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">Media tehtävä: video</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                     <div class="dropdown-divider"></div>
@@ -31,14 +32,91 @@
     </nav>
 </header>
 <main>
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="jumbo">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
             featured content or information.</p>
+        <a class="btn btn-dark btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+           aria-controls="collapseExample">
+            Read more
+        </a>
+        <div class="collapse" id="collapseExample">
+            <div class="container-sm" id="collapsecontainer">
+                <img src="https://placekitten.com/200/200" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                        to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
     </section>
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        <ins>Media tehtävät</ins>
+                    </h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="card md-4">
+                        <img src="https://placekitten.com/300/229" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card md-4">
+                        <img src="https://placekitten.com/300/225" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card md-4">
+                        <img src="https://placekitten.com/300/226" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card md-4">
+                        <img src="https://placekitten.com/300/228" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <h1>
+                        <ins>Ohjelmointi tehtävät</ins>
+                    </h1>
+                </div>
                 <div class="col-md-4">
                     <div class="card md-4">
                         <img src="https://placekitten.com/300/229" class="card-img-top" alt="...">
@@ -103,7 +181,9 @@
                             </div>
                             <div class="modal-body">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                            allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +192,7 @@
             </div>
         </div>
     </div>
-    <footer class="text-muted">
+    <footer class="text-muted py-4">
         <div class="container text-center">
             <p>
                 If you liked what you saw, please be free to contact me!

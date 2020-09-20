@@ -15,12 +15,21 @@ $(document).ready(function(){
     }
   });
 
+   var state = true;
 
   $("#navlogo").click(function(){
     var nav = $("#navlogo");
-    nav.animate({left: '100px'}, "slow");
-    nav.animate({fontSize: '3em'}, "slow");
+
+    if(state){
+      nav.animate({left: '100px'}, "slow");
+      nav.animate({fontSize: '3.5em'}, "slow");
+    }else{
+      nav.animate({left: '0px'}, "slow");
+      nav.animate({fontSize: '2em'}, "slow");
+    }
+    state = !state;
   });
+
 
   $("#dropdownMenuButton").click(function(){
     $(".dropdown-menu").slideToggle('slow', 'swing');
