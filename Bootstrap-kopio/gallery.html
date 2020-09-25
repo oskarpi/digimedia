@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/bs-custom.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="ion-social-octocat"></i> Example</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="ion-home"></i> Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="gallery.html"><i class="ion-android-camera"></i> Gallery <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="ion-android-contacts"></i> About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="row">
+        <section class="col-sm-8">
+            <div class="row">
+                <div class="col">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://placekitten.com/300/229" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placekitten.com/300/225" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placekitten.com/300/227" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open image
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid" src="https://placekitten.com/1200/900">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="col-sm-4">
+            <div class="jumbotron">
+                <h1>Ut laoreet tellus a ligula dictum interdum.</h1>
+                <p>
+                    In mattis condimentum neque, ac pellentesque metus posuere non. Nam bibendum ultricies risus sed
+                    hendrerit. Donec quis neque tellus. Quisque nec ligula molestie, finibus urna in, condimentum felis.
+                    Donec ac ex ut sapien fringilla aliquet et eget ante. Morbi nec suscipit mauris, eu imperdiet arcu.
+                    Aliquam erat volutpat. Mauris semper dolor diam, vel condimentum sem fringilla et. Mauris aliquet
+                    elit
+                    at eros commodo, non viverra nisi malesuada. Suspendisse sagittis justo nec lorem aliquet, vel
+                    volutpat
+                    dolor scelerisque.
+                </p>
+            </div>
+        </aside>
+    </main>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
