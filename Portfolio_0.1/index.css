@@ -1,20 +1,186 @@
-#jumbo{
-    margin-bottom: 0rem;
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 120px;
+    background-color: rgba(0,0,0,0.3);
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-caption a{
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+}
+
+
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-brand{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    padding: .2rem 1rem;
+}
+.w-100{
+    height: 100vh;
+}
+@media only screen and (max-width: 767px){
+    .navbar-light .navbar-brand{
+        font-size: 25px;
+    }
+    .carousel-caption h5{
+        font-size: 35px;
+    }
+    .carousel-caption p{
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .carousel-caption a{
+        font-size: 15px;
+    }
+    .navbar-toggler{
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        background: white;
+    }
+    .carousel-caption{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-inline: 30px 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+ul.filters > li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul.filters > li > a{
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+}
+ul.filters > li.active > a{
+    color: white;
+    background-color: #28bea8;
 }
 .card{
-    margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 50px;
+    color: black;
+    border-radius: 0;
+    border: 1px solid #eeee;
+    background-color: white;
+    box-shadow: 1px 1px  1.5px rgba(0,0,0,0.075);
 }
-.col-md-12{
-    margin-bottom: 2rem;
-    border: 2rem;
+.card-head{
+    position: relative;
+    overflow: hidden;
 }
-#collapseExample{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67,78,94,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
-#collapsecontainer{
-    width: 29rem;
+.card-hover{
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40,190,168,0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
-.navbar-brand{
-    font-size: 2rem;
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h4.title{
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.card-btn{
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: white;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.card-btn:hover{
+    background-color: #28bea8;
+    color: white;
 }
