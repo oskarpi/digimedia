@@ -49,6 +49,15 @@ $(document).ready(function(){
     }
   });
 
+  $('#movedown, #movedown2').on('click', function(event) {
+
+
+      $('html, body').animate({
+        scrollTop: $('.filters').offset().top
+      }, 1000);
+      });
+
+
   $("#navbarDropdownMedia").click(function(){
     $("#dropdown-menu-Media").slideToggle(1000);
   });
