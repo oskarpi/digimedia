@@ -49,5 +49,12 @@ $(document).ready(function(){
     }
   });
 
+  $("#navbarDropdownMedia").click(function(){
+    $("#dropdown-menu-Media").slideToggle(1000);
+  });
+
+  $("#navbarDropdownOhjelmointi").click(function(){
+    $("#dropdown-menu-Ohjelmointi").slideToggle(1000);
+  });
 
 });

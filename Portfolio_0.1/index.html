@@ -24,14 +24,14 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal"
-                           data-target="#vektoriPiirustus">Tekijä<span class="sr-only">(current)</span></a>
+                           data-target="#tekija">Tekijä<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMedia" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Media
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMedia" id="dropdown-menu-Media">
                             <a class="dropdown-item" href="#" data-toggle="modal"
                                data-target="#vektoriPiirustus">Vektoripiirustus</a>
                             <a class="dropdown-item" href="#" data-toggle="modal"
@@ -51,7 +51,7 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Ohjelmointi
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu-Ohjelmointi">
                             <a class="dropdown-item"
                                href="https://users.metropolia.fi/~oskarpi/Mediatekniikka/jQuery_tehtavat"
                                target="_blank" rel="noopener noreferrer">jQuery</a>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </nav>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -83,7 +83,9 @@
                         Tällä sivustolla esittelen Diditaalisen median perusteet kurssin tehtäviäni.
                         Ole hyvä ja tutustuni niihin.
                     </p>
-                    <p class="animate__animated animate__bounceInLeft animate__delay-3s"><a href="#">Lisää tietoa
+                    <p class="animate__animated animate__bounceInLeft animate__delay-3s"><a href="#" data-toggle="modal"
+                                                                                            data-target="#tekija">Lisää
+                        tietoa
                         tekijästä</a>
                     </p>
                 </div>
@@ -324,9 +326,7 @@
                                     <div class="card-hover">
                                         <h2>Wordpress tehtävä</h2>
                                         <p>
-                                            Wordpress luentojen mukaan tehty esimerkkisivusto. Otsaketta (banner)
-                                            en saanut toimimaan helpdeskin korjauksesta huolimatta. Thmubnailit
-                                            eivät myöskään näin sivustolla mostpopular lisäosalla.
+                                            Wordpress luentojen mukaan tehty esimerkkisivusto.
                                         </p>
                                     </div>
                                 </div>
@@ -343,7 +343,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="afterEffectLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="afterEffectLabel">After Effects</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -364,7 +364,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="vektoriPiirustusLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="vektoriPiirustusLabel">Vektoripiirustus</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -380,7 +380,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="videoEditointiLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="videoEditointiLabel">Videoeditoinnin perusteet</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -401,7 +401,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="videoSprinttiLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="videoSprinttiLabel">Videosprintti</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -422,7 +422,7 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="moniraitaMiksausLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="moniraitaMiksausLabel">Moniraitamiksaus</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -443,16 +443,31 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="tekijaLabel">Modal title</h5>
+                                        <h5 class="modal-title" id="tekijaLabel">Oskari Piiroinen</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item"
-                                                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                                    allowfullscreen></iframe>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <img src="kuvat/portfolio_kuva.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-7">
+                                                <ul class="list-group">
+                                                    <list class="list-group-item">27-vuotta</list>
+                                                    <list class="list-group-item">Asuinpaikka: Espoo</list>
+                                                    <list class="list-group-item">Tutkinnot: Ylioppilas (2012),
+                                                        Sairaanhoitaja (2017),
+                                                        Tieto- ja viestintätekniikan insinööri(2023?)
+                                                    </list>
+                                                    <list class="list-group-item">Harrastukset: frisbeegolf, lenkkeily
+                                                    </list>
+                                                    <list class="list-group-item">Yhteystiedot:
+                                                        Oskari.Piiroinen@metropolia.fi
+                                                    </list>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -467,7 +482,7 @@
         <div class="container text-center">
             <p>
                 Jos pidit otathan yhteyttä
-                oskari.piiroinen@metropolia.fi
+                Oskari.Piiroinen@metropolia.fi
             </p>
             <a href="#top">Takaisin ylös</a>
         </div>
