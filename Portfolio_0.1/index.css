@@ -9,6 +9,7 @@ main{
 }
 footer{
     background-color: #eb791c;
+    border-top: 1.5px solid black;
 }
 a{
     color: grey;
@@ -57,7 +58,18 @@ a:hover{
 .carousel-caption a:hover{
     background: black;
 }
-
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 25px;
+    height: 25px;
+}
+.navbar{
+    border-bottom: 1.5px solid black;
+}
 .navbar-nav a{
     font-size: 18px;
     text-transform: uppercase;
@@ -94,13 +106,13 @@ ul.filters{
     display: block;
     width: 100%;
     margin: 0;
-    padding-inline: 30px 0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 ul.filters > li{
     list-style-type: none;
     display: inline-block;
+    border: 0.12rem solid black;
 }
 ul.filters > li > a{
     display: block;
@@ -121,7 +133,7 @@ ul.filters > li.active > a{
     margin-bottom: 50px;
     color: black;
     border-radius: 0;
-    border: 1px solid #eeee;
+    border: 0.8px solid black;
     background-color: white;
     box-shadow: 1px 1px  1.5px rgba(0,0,0,0.075);
 }
@@ -171,7 +183,7 @@ ul.filters > li.active > a{
     padding-bottom: 10px;
 }
 h4.title{
-    color: #434e5e;
+    color: black;
     font-size: 1.2rem;
     margin-bottom: 0;
 }
@@ -179,8 +191,8 @@ h4.title{
     margin-bottom: -40px;
     font-size: 0.9rem;
     background-color: white;
-    color: #222;
-    border: 1px solid #eee;
+    color: black;
+    border: 0.8px solid black;
     border-radius: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -194,6 +206,22 @@ h4.title{
     width: 100%;
     font-weight: bold;
     font-size: 2rem;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.modal-header{
+    background-color: #eb791c;
+    border-bottom: 1px solid black;
+}
+.list-group{
+    border-radius: 0px;
+}
+.list-group-item{
+    border: 1px solid black;
+}
+#kuva_tekija{
+    border-style: solid;
 }
 @media only screen and (max-width: 767px){
     .navbar-light .navbar-brand{
@@ -221,5 +249,18 @@ h4.title{
     }
     ul.filters > li > a{
         padding: 5px 20px;
+    }
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media only screen and (max-width: 380px){
+    ul.filters > li > a{
+        padding: 3.75px 15px;
     }
 }
